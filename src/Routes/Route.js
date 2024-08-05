@@ -23,7 +23,7 @@ const AppRoutes = () => {
         }
       >
         <Routes>
-          <Route to={PAGE_URLS.HOMEPAGE} element={<LandingPage index />} />
+          <Route to={PAGE_URLS.HOMEPAGE} element={<LandingPage />} index />
         </Routes>
       </Suspense>
     </Layout>

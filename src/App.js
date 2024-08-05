@@ -5,7 +5,9 @@ import AppRoutes from "./Routes/Route";
 function App() {
   return (
     <BrowserRouter>
-      <AppRoutes />
+      <div className="h-screen bg-gray-900">
+        <AppRoutes />
+      </div>
     </BrowserRouter>
   );
 }
