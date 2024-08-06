@@ -4,7 +4,8 @@ import { VscGithub } from "react-icons/vsc";
 import { CiLinkedin } from "react-icons/ci";
 import { SiLeetcode } from "react-icons/si";
 import { FaTwitter } from "react-icons/fa";
-import profilepic from "../../assets/face-removebg-preview.png";
+import profilepic from "../../assets/Mobile Banner.png";
+import AnimatedBorder from "../Animations/AnimatedBorder ";
 
 const LandingPage = () => {
   const [showImage, setShowImage] = useState(false);
@@ -19,12 +20,10 @@ const LandingPage = () => {
   return (
     <div className="grid grid-cols-2 gap-2 lg:mx-20">
       <div className="text-gray-200 mt-10 mb-10 text-sm font-serif">
-        Frontend Developer
-        <div className="grid grid-cols-1 text-5xl font-mono">Hello I'm</div>
-        <div className="grid grid-cols-1 text-5xl font-mono text-green-300">
-          Srijan Majumder
-        </div>
-        <div className="grid grid-cols-1 text-sm mt-5 text-gray-300 leading-loose font-serif tracking-widest">
+        <div className="text-sm text-green-300">Frontend Developer</div>
+        <div className="text-5xl font-mono">Hello, I'm</div>
+        <div className="text-5xl font-mono text-green-300">Srijan Majumder</div>
+        <div className="mt-5 text-sm text-gray-300 leading-loose font-serif tracking-widest">
           I am a fresher frontend developer passionate about creating
           user-friendly web interfaces using HTML, CSS, and JavaScript. I am
           eager to apply my skills and learn new technologies in real-world
@@ -35,33 +34,56 @@ const LandingPage = () => {
           build comprehensive web applications.
         </div>
         <div className="flex mt-5">
-          <button className="border border-green-300 px-3 py-1 text-green-300 rounded-full flex hover:bg-green-400 hover:text-white">
-            Download CV
-            <MdOutlineFileDownload
-              className="ml-2 hover:animate-bounce"
-              size={20}
-            />
-          </button>
-          <button className="border-green-300">
-            <VscGithub className="ml-5" size={25} color="#68d391" />
-          </button>
-          <button className="border-green-300">
-            <CiLinkedin className="ml-5" size={25} color="#68d391" />
-          </button>
-          <button className="border-green-300">
-            <SiLeetcode className="ml-5" size={25} color="#68d391" />
-          </button>
-          <button className="border-green-300">
-            <FaTwitter className="ml-5" size={25} color="#68d391" />
-          </button>
+          <a
+            href="C:\Users\Srijan\OneDrive\Desktop\Portfolio\src\assets\SrijanMajumder_Resume" // Replace with the correct file path
+            download="Your-File-Name.pdf" // This sets the default file name for download
+          >
+            <button className="border border-green-300 px-3 py-2 text-green-300 rounded-full flex hover:bg-green-400 hover:text-white">
+              Download CV
+              <MdOutlineFileDownload
+                className="ml-2 hover:animate-bounce"
+                size={20}
+              />
+            </button>
+          </a>
+
+          <a
+            href="https://github.com/UltraInstinctSri"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="border-green-300">
+              <VscGithub className="ml-5" size={30} color="#68d391" />
+            </button>
+          </a>
+          <a>
+            <button className="border-green-300">
+              <CiLinkedin className="ml-5" size={30} color="#68d391" />
+            </button>
+          </a>
+          <a>
+            {" "}
+            <button className="border-green-300">
+              <SiLeetcode className="ml-5" size={30} color="#68d391" />
+            </button>
+          </a>
+          <a>
+            {" "}
+            <button className="border-green-300">
+              <FaTwitter className="ml-5" size={30} color="#68d391" />
+            </button>
+          </a>
         </div>
       </div>
-      <div className="ml-40 mt-3">
+      <div className="flex justify-center items-center">
         {showImage && (
-          <img
-            src={profilepic}
-            className="rounded-full h-[400px] w-[350px] animate-fadeIn"
-          />
+          <AnimatedBorder>
+            <img
+              src={profilepic}
+              alt="Profile"
+              className="w-96 h-96 rounded-full object-cover"
+            />
+          </AnimatedBorder>
         )}
       </div>
     </div>

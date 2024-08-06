@@ -5,7 +5,7 @@ const Header = () => {
 
   return (
     <nav className="bg-gray-900">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-3 lg:mx-20">
+      <div className="mx-auto max-w-9xl  sm:px-6 lg:px-0 lg:mx-20">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
@@ -49,7 +49,7 @@ const Header = () => {
             </button>
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start ">
-            <div className="flex flex-shrink-0 items-center">
+            <div className="flex flex-shrink-0 items-center mr-8">
               <p className="text-4xl font-mono text-white ">
                 Srijan
                 <span style={{ fontSize: "30px" }} className="text-teal-500">
