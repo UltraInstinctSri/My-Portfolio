@@ -38,12 +38,9 @@ const LandingPage = () => {
             href="C:\Users\Srijan\OneDrive\Desktop\Portfolio\src\assets\SrijanMajumder_Resume" // Replace with the correct file path
             download="Your-File-Name.pdf" // This sets the default file name for download
           >
-            <button className="border border-green-300 px-3 py-2 text-green-300 rounded-full flex hover:bg-green-400 hover:text-white">
+            <button className="border border-green-300 px-3 py-2 text-green-300 rounded-full flex items-center  hover:drop-shadow-green-300">
               Download CV
-              <MdOutlineFileDownload
-                className="ml-2 hover:animate-bounce"
-                size={20}
-              />
+              <MdOutlineFileDownload className="ml-2 " size={20} />
             </button>
           </a>
 
@@ -53,24 +50,40 @@ const LandingPage = () => {
             rel="noopener noreferrer"
           >
             <button className="border-green-300">
-              <VscGithub className="ml-5" size={30} color="#68d391" />
+              <VscGithub
+                className="ml-5 hover:text-green-300 hover:drop-shadow-green-300"
+                size={30}
+                color="#68d391"
+              />
             </button>
           </a>
           <a>
-            <button className="border-green-300">
-              <CiLinkedin className="ml-5" size={30} color="#68d391" />
+            <button className="border-green-300 ">
+              <CiLinkedin
+                className="ml-5  hover:text-green-300 hover:drop-shadow-green-300"
+                size={30}
+                color="#68d391"
+              />
             </button>
           </a>
           <a>
             {" "}
             <button className="border-green-300">
-              <SiLeetcode className="ml-5" size={30} color="#68d391" />
+              <SiLeetcode
+                className="ml-5  hover:text-green-300 hover:drop-shadow-green-300"
+                size={30}
+                color="#68d391"
+              />
             </button>
           </a>
           <a>
             {" "}
             <button className="border-green-300">
-              <FaTwitter className="ml-5" size={30} color="#68d391" />
+              <FaTwitter
+                className="ml-5  hover:text-green-300 hover:drop-shadow-green-300"
+                size={30}
+                color="#68d391"
+              />
             </button>
           </a>
         </div>

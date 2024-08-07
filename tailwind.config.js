@@ -12,6 +12,9 @@ module.exports = {
       animation: {
         fadeIn: "fadeIn 1s ease-in-out forwards",
       },
+      dropShadow: {
+        "green-300": "0 0 10px #68d391",
+      },
     },
   },
   plugins: [],
