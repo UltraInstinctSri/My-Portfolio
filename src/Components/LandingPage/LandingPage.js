@@ -4,7 +4,7 @@ import { VscGithub } from "react-icons/vsc";
 import { CiLinkedin } from "react-icons/ci";
 import { SiLeetcode } from "react-icons/si";
 import { FaTwitter } from "react-icons/fa";
-import profilepic from "../../assets/Mobile Banner.png";
+import profilepic from "../../assets/comhiclipartiddrp-removebg-preview.png";
 import AnimatedBorder from "../Animations/AnimatedBorder ";
 
 const LandingPage = () => {
@@ -94,7 +94,7 @@ const LandingPage = () => {
             <img
               src={profilepic}
               alt="Profile"
-              className="w-96 h-96 rounded-full object-cover"
+              className="w-96 h-96  object-cover"
             />
           </AnimatedBorder>
         )}

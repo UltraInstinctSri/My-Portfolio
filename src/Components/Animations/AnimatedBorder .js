@@ -20,9 +20,9 @@ const AnimatedBorder = ({ children }) => {
   return (
     <div ref={divRef} className="relative inline-block">
       <motion.svg
-        className="absolute top-0 left-0 pointer-events-none z-10 -left-5 -top-4"
-        width={dimensions.width + 30}
-        height={dimensions.height + 30}
+        className="absolute top-0 left-0 pointer-events-none z-10 -left-6 -top-5"
+        width={dimensions.width + 40}
+        height={dimensions.height + 40}
         viewBox={`0 0 ${dimensions.width + 30} ${dimensions.height + 30}`}
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
